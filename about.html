@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh">
+   <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+      <!-- 中文 SEO 基本設定 -->
+      <title>Global Dive Shop Discover V1.0| 全球潛水店查找平台</title>
+      <meta name="description" content="整合 PADI、SSI、SDI 等國際潛水系統資訊，幫助潛水愛好者快速找到全球值得信賴的潛店。免費查找，持續更新。">
+      <meta name="keywords" content="潛水店, PADI, SSI, SDI, 潛旅, 自由潛水, 水肺潛水, 潛水教練, 潛水地圖, 潛水資訊">
+      <meta name="author" content="Global Dive Shop Discover 開發者">
+      <meta http-equiv="Content-Language" content="zh-TW">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- Open Graph：使用英文描述更有國際兼容性 -->
+      <meta property="og:title" content="Global Dive Shop Discover | Find Dive Shops Worldwide">
+      <meta property="og:description" content="Discover trusted dive shops across the world. Aggregated info from PADI, SSI, SDI and more. Great for both beginners and certified divers.">
+      <meta property="og:type" content="website">
+      <!-- Twitter Card -->
+      <meta name="twitter:card" content="summary_large_image">
+      <meta name="twitter:title" content="Global Dive Shop Discover">
+      <meta name="twitter:description" content="Explore and review dive shops around the world. Integrated with top certifying agencies. Free, fast, and open to all divers.">
+      <!-- Favicon -->
+      <link rel="icon" href="./image/favicon.ico" type="image/x-icon">
+   </head>
+   <body class="bg-gray-50">
+      <!-- 導覽列 -->
+      <header class="bg-gray-100 shadow-sm fixed top-0 left-0 right-0 z-50">
+         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+         <div class="flex justify-between h-16">
+            <div class="flex items-center">
+               <a class="flex items-center" href="./index.html">
+                  <div class="flex h-8 w-8 items-center justify-center rounded-md bg-blue-600 text-white">
+                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 0 0 4.5 4.5H18a3.75 3.75 0 0 0 1.332-7.257 3 3 0 0 0-3.758-3.848 5.25 5.25 0 0 0-10.233 2.33A4.502 4.502 0 0 0 2.25 15Z"></path>
+                     </svg>
+                  </div>
+                  <span class="ml-2 text-xl font-bold text-gray-900">Global Dive Shop Finder</span>
+               </a>
+            </div>
+            <div class="hidden md:flex md:items-center md:space-x-8">
+               <a href="./index.html" class="inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 border-transparent text-gray-600 hover:border-blue-500 hover:text-gray-900">潛水店列表</a>
+               <a href="./about.html" class="inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 border-blue-500 text-gray-900">關於我們</a>
+               <a href="#" class="inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 border-transparent text-gray-400 cursor-not-allowed">我的收藏
+               <span class="ml-1 inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600">開發中</span>
+               </a>
+               <a href="#" class="inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 border-transparent text-gray-400 cursor-not-allowed">我的評論
+               <span class="ml-1 inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600">開發中</span>
+               </a>
+               <a href="#" class="inline-flex items-center px-1 pt-1 text-sm font-medium border-b-2 border-transparent text-gray-400 cursor-not-allowed">登入/註冊
+               <span class="ml-1 inline-flex items-center rounded-md bg-gray-50 px-2 py-1 text-xs font-medium text-gray-600">開發中</span>
+               </a>
+            </div>
+            <div class="hidden md:flex md:items-center md:space-x-4">
+               <a class="px-3 py-2 text-sm font-medium text-gray-600 hover:text-blue-600" href="https://o3clrk7y.forms.app/globaldiveshopdiscover" target="_blank">聯繫我們</a>
+               <a href="https://buymeacoffee.com/diveshopdiscover" target="_blank" rel="noopener noreferrer" class="px-4 py-2 text-sm font-medium text-white bg-blue-600 rounded-md hover:bg-blue-500">贊助支持</a>
+               <select class="form-select text-sm rounded-md border-gray-200 text-gray-600 hover:border-blue-500 focus:border-blue-500 focus:ring focus:ring-blue-200 cursor-pointer">
+                  <option value="zh" selected>繁體中文</option>
+                  <option value="en">開發中</option>
+               </select>
+            </div>
+            <div class="flex md:hidden">
+               <button id="menu-toggle" type="button" class="inline-flex items-center justify-center rounded-md p-2 text-gray-700 hover:bg-gray-100 hover:text-gray-900">
+                  <span class="sr-only">打開選單</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                     <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                  </svg>
+               </button>
+            </div>
+         </div>
+         <!-- 手機版選單（預設隱藏） -->
+         <div id="mobile-menu" class="md:hidden hidden px-4 pb-4 space-y-2 bg-white border-t border-gray-200">
+            <a href="./about.html" class="block text-gray-700 hover:text-blue-600">關於我們</a>
+            <a href="https://o3clrk7y.forms.app/globaldiveshopdiscover" class="block text-gray-700 hover:text-blue-600" target="_blank">聯繫我們</a>
+            <a href="https://buymeacoffee.com/diveshopdiscover" class="block text-gray-700 hover:text-blue-600" target="_blank">贊助支持</a>
+         </div>
+      </header>
+      <!-- 主內容區 -->
+      <main class="pt-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+         <div class="bg-white p-8 rounded-lg shadow text-gray-800 text-base leading-relaxed space-y-6">
+            <h1 class="text-3xl font-bold text-gray-900 mb-8">關於我們</h1>
+            <p>
+               🌊 <strong>Global Dive Shop Discover</strong> 是專為潛水愛好者打造的資訊平台，整合了 PADI、SDI、SSI 等主流系統的潛水店資料。不論你是剛起步的新手，還是已經愛上海底世界的進階潛水員，都能在這裡安心找到值得信賴的潛店，放心探索大海的每個角落。
+            </p>
+            <h2 class="text-xl font-semibold text-gray-900">💡 解決的問題</h2>
+            <p>
+               現在的潛水資訊非常分散──你可能需要在 Google 地圖、Threads 或不同論壇中東找西找，卻還是找不到完整又可靠的潛店資訊。
+            </p>
+            <p>
+               <strong>Global Dive Shop Discover</strong> 希望成為潛水人專屬的平台，幫助你：
+            </p>
+            <ul class="list-disc list-inside space-y-2">
+               <li>整合各個系統的潛水店數據（90% 完成）</li>
+               <li>集中查找高評價潛水店（待開發）</li>
+               <li>收藏與評論你去過的潛店（待開發）</li>
+               <li>找到真正符合需求的潛水地點（待優化）</li>
+            </ul>
+            <h2 class="text-xl font-semibold text-gray-900">🧑‍💻 關於我</h2>
+            <p>
+               這是一個由 <strong>1 人獨立開發</strong> 的專案。如果你覺得這個網站對你有幫助，歡迎請我喝杯咖啡 ☕！
+            </p>
+            <p>
+               <a href="https://www.buymeacoffee.com/diveshopdiscover" target="_blank">
+               <img src="https://img.buymeacoffee.com/button-api/?text=Buy me a coffee&emoji=☕&slug=diveshopdiscover&button_colour=5F7FFF&font_colour=ffffff&font_family=Lato&outline_colour=000000&coffee_colour=FFDD00" />
+               </a>
+            </p>
+            <p>
+               你的支持，將是我持續開發與優化這個平台的最大動力，也會幫助更多潛水人因此受益。<br>
+               <strong>謝謝你的支持與同行！</strong> 🙏🌊
+            </p>
+            <h2 class="text-xl font-semibold text-gray-900">📘 使用說明</h2>
+            <ol class="list-decimal list-inside space-y-2">
+               <li>先選擇 <strong>國家</strong>（可多選，也支援關鍵字搜尋）</li>
+               <li>接著選擇 <strong>潛水系統</strong>（如 PADI、SSI 等）</li>
+               <li>最後依照 <strong>潛店等級、標籤</strong> 等條件篩選你理想的潛水店</li>
+            </ol>
+            <h2 class="text-xl font-semibold text-gray-900">⚠️ 注意事項</h2>
+            <ul class="list-disc list-inside space-y-2">
+               <li>所有資料皆來自公開來源，資料版權屬於其各自平台</li>
+               <li>若有錯誤或疑問，歡迎隨時 <a href="https://o3clrk7y.forms.app/globaldiveshopdiscover" class="text-blue-600 underline" target="_blank">聯繫我們</a></li>
+               <li>部分資料可能尚未完整，未來會持續更新與補充</li>
+            </ul>
+         </div>
+      </main>
+      <script>
+         document.addEventListener("DOMContentLoaded", function () {
+           const toggleBtn = document.getElementById("menu-toggle");
+           const mobileMenu = document.getElementById("mobile-menu");
+         
+           if (toggleBtn && mobileMenu) {
+             toggleBtn.addEventListener("click", () => {
+               mobileMenu.classList.toggle("hidden");
+             });
+           }
+         });
+      </script>
+   </body>
+</html>
